@@ -42,9 +42,10 @@ body {
 
 
 
-/* -------------------------Стилизация списков---------------- */
+/* -----------------Стилизация списков------------------------ */
 .list { 
   list-style: none;
+  margin: 0;
 }
 
 /* Убирает подчеркивание ссылок */
@@ -80,9 +81,17 @@ body {
 
 
 
-/*------------------------------ Футер------------------------ */
+/*----------------------------- Футер------------------------ */
 .footer { 
   background-color: var(--third-background);
+}
+.footer-logo { 
+  display: inline-block;
+  padding: 60px 0px 20px 0px;
+}
+
+.footer-list {
+  padding-bottom: 60px;
 }
 
 .footer-list .footer-link { 
@@ -106,11 +115,20 @@ body {
 
 }
 
+.header-link.now { 
+  color: var(--accent);
+}
+
 .header-link:hover,
 .header-link:focus,
 .header-contacts-link:hover, 
 .header-contacts-link:focus { 
   color: var(--accent); 
+}
+
+.header-list-navigation, 
+.header-contacts-list { 
+  margin: 0;
 }
 
 
@@ -126,7 +144,9 @@ body {
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  
+
+  margin: 0px auto 30px auto;
+  padding-top: 200px;
 }
 
 .hero-button { 
@@ -139,6 +159,8 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
+
+  margin-bottom: 200px;
 }
 
 
@@ -150,15 +172,25 @@ body {
   line-height: 1.16;
   text-align: center;
 
+  margin: 0 auto 50px auto;
 }
 
 /* --------------------Стилизация особенностей---------------- */
+.feature-list { 
+  margin: 0;
+}
+
+.feature-item { 
+  padding-bottom: 94px;
+}
+
 .feature-title { 
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  
+
+  margin: 0 0 10px 0;
 }
 
 .feature-text {
@@ -168,9 +200,17 @@ body {
 
  }
 
+ /* ----------------------------О нас------------------------- */
 
+ .about-list { 
+   margin: 0;
+ }
 
- /* --------------------------Стилизация команды-------------- */
+ .about-item { 
+   padding-bottom: 94px;
+ }
+
+ /* --------------------------Наша команда-------------- */
 .team { 
    background-color: var(--second-background);
  }
@@ -184,19 +224,32 @@ body {
   font-weight: 500;
   line-height: 1.19;
   text-align: center;
+
+  margin: 0 0 10px 0;
  }
 
  .team-text { 
   color: var(--second-text);
-font-size: 16px;
-line-height: 1.19;
-text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 
+  padding: 0 0 30px 0;
+  margin: 0;
+ }
+
+ .team-picture { 
+   margin: 0 0 30px 0;
  }
 
 
-
 /*-------------- Portfolio.html Стилизация фильтра------------ */
+.filter-list { 
+  margin-bottom: 50px;
+
+}
+
+
 .list .filter-btn:hover, .list .filter-btn:focus { 
   background-color: var(--accent);
 }
@@ -208,16 +261,25 @@ text-align: center;
   text-align: center;
 
   cursor:pointer; 
-
 }
 
 
 
 /*---------------------------- Стилизация портфолио---------- */
+.main-portfolio { 
+  margin:0;
+}
 
 .portfolio-link {
+  display: inline-block;
   text-decoration: none;
   color: var(--main-text);
+}
+
+.portfolio-img {
+  display: inline-block;
+  margin: 0 0 20px 0;
+  padding: 0;
 }
 
 .portfolio-title{
@@ -225,6 +287,8 @@ font-size: 18px;
 font-weight: 700;
 line-height: 2;
 text-align: left;
+
+margin: 0;
 
 }
 
@@ -234,4 +298,68 @@ text-align: left;
   line-height: 1.87;
   text-align: left;
 
+  margin: 0;
 }
+
+
+
+
+/* -----------------Геометрия и позиционирование-------------- */
+
+/*----------------- Глобальный сброс стилей------------------- */
+
+/* h1,h2,h3,h4,h5,h6,ul,li,p   */
+/* ul {
+  padding: 0;
+  margin: 0;
+} */
+
+
+.header-box-left, .header-box-right {
+  outline: 3px solid red;
+}
+
+
+
+
+/* Цвета секций для понимания */
+.header { 
+  outline: 3px solid red;
+  background-color: rgb(235, 166, 166);}
+
+.hero {
+  outline: 3px solid red;
+  background-color:rgb(194, 247, 247);}
+
+.feature { 
+  outline: 3px solid red;
+  background-color: rgb(157, 157, 207);}
+
+.about {
+  outline: 3px solid red;
+  background-color: rgb(241, 236, 163);}
+
+.team {
+  outline: 3px solid red;
+   background-color: rgb(245, 157, 223);}
+
+.footer {
+  outline: 3px solid red;
+  background-color: rgb(179, 235, 196);}
+
+
+
+  /* Портфолио секции */
+
+  .main-portfolio { 
+    outline: 3px solid  red;
+  }
+
+  .filter { 
+    outline: 3px solid  red;
+  }
+
+  .filter-list {
+    padding-top: 94px;
+    padding-bottom: 94px;
+     }
