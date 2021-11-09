@@ -371,7 +371,7 @@ body {
 }
 
 .portfolio-item { 
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .portfolio-item:nth-last-child(-n+3) { 
