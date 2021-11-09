@@ -57,6 +57,9 @@ body {
   color: var(--accent);
 }
 
+.section {
+  padding-bottom: 94px;
+}
 
 /* -----------------Стилизация списков------------------------ */
 .list { 
@@ -244,10 +247,6 @@ body {
 
 }
 
-.feature-item { 
-  padding-bottom: 94px;
-  
-}
 .feature-item + .feature-item {
   margin-left: 30px;
 }
@@ -273,7 +272,7 @@ body {
    display: flex;
 
    margin: 0;
-   padding-bottom: 94px;
+
  }
  .about-item + .about-item {
    margin-left: 30px;
@@ -292,8 +291,6 @@ body {
 
  .team-list {
    display: flex;
-
-   padding-bottom: 94px;
  }
 
 .team-item {
@@ -357,14 +354,12 @@ body {
 
 /*---------------------------- Стилизация портфолио---------- */
 .main-portfolio { 
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-
-  margin-bottom: 94px;
 }
 
 .portfolio-item:not(:nth-child(3n+1)) { 
@@ -379,10 +374,6 @@ body {
   margin-bottom: 0;
 }
 
-
-/* .portfolio-item:nth-last-child(-n+3) { 
-  margin-bottom: 94px;
-} */
 
 
 .portfolio-link {
@@ -415,22 +406,6 @@ margin: 0;
 
   margin: 0;
 }
-
-
-
-
-/* -----------------Геометрия и позиционирование-------------- */
-
-/*----------------- Глобальный сброс стилей------------------- */
-
-/* h1,h2,h3,h4,h5,h6,ul,li,p   */
-/* ul {
-  padding: 0;
-  margin: 0;
-} */
-
-
-
 
 
 
