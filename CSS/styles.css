@@ -326,11 +326,18 @@ body {
 
 
 /*-------------- Portfolio.html Стилизация фильтра------------ */
-.filter-list { 
-  margin-bottom: 50px;
 
+.filter-list { 
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  
 }
 
+
+.filter-item + .filter-item {
+  margin-left: 8px; 
+}
 
 .list .filter-btn:hover, .list .filter-btn:focus { 
   background-color: var(--accent);
@@ -346,11 +353,36 @@ body {
 }
 
 
-
 /*---------------------------- Стилизация портфолио---------- */
 .main-portfolio { 
-  margin:0;
+  margin-top: 94px;
 }
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 94px;
+}
+
+.portfolio-item:not(:nth-child(3n+1)) { 
+  margin-left: 30px;
+  background-color: teal;
+}
+
+.portfolio-item { 
+  margin-bottom: 30px;
+}
+
+.portfolio-item:nth-last-child(-n+3) { 
+  margin-bottom: 0;
+}
+
+
+/* .portfolio-item:nth-last-child(-n+3) { 
+  margin-bottom: 94px;
+} */
+
 
 .portfolio-link {
   display: inline-block;
@@ -402,8 +434,3 @@ margin: 0;
 
 
 
-
-  .filter-list {
-    padding-top: 94px;
-    padding-bottom: 94px;
-     }
