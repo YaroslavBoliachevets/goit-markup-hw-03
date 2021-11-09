@@ -53,7 +53,9 @@ body {
   margin: 0;
 }
 
-
+.header-link.current { 
+  color: var(--accent);
+}
 
 
 /* -----------------Стилизация списков------------------------ */
@@ -367,7 +369,6 @@ body {
 
 .portfolio-item:not(:nth-child(3n+1)) { 
   margin-left: 30px;
-  background-color: teal;
 }
 
 .portfolio-item { 
