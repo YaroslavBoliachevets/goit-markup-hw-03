@@ -24,7 +24,7 @@
     <!-----------------------Хедер----------------------------->
     
       <header class="header">
-        <div class="container header">
+        <div class="container header-container">
 
           <!-- Text WebStudio-->
           <div class="logo" >
@@ -34,7 +34,7 @@
           <nav class="nav header-box-left">
             <!-- Навигация-->
             <ul class="header-list-navigation list">
-              <li class="header-item"><a class="header-link" href="./studio" >Студия </a></li>
+              <li class="header-item"><a class="header-link current" href="./index.html" >Студия </a></li>
               <li class="header-item"><a class="header-link" href="./portfolio.html">Портфолио</a></li>
               <li class="header-item"><a class="header-link" href="./contacts.html" >Контакты </a></li>
             </ul>
@@ -110,17 +110,17 @@
 
       <!---------------------- Чем мы занимаемся---------------->
       <section class="about section">
-        <h2 class="about-title section-title">Чем мы занимаемся</h2>
         <div class="container about">
+          <h2 class="about-title section-title">Чем мы занимаемся</h2>
           <ul class="about-list list">
             <li class="about-item">
-              <img src="images/box1.jpg" alt="работа с кодом" width="370" height="294" />
+              <img class="img" src="images/box1.jpg" alt="работа с кодом" width="370"  height="294" />
             </li>
             <li class="about-item">
-              <img src="images/box2.jpg" alt="разработка приложения" width="370" height="294" />
+              <img class="img" src="images/box2.jpg" alt="разработка приложения" width="370" height="294" />
             </li>
             <li class="about-item">
-              <img src="images/box3.jpg" alt="разработка дизайна" width="370" height="294" />
+              <img class="img" src="images/box3.jpg" alt="разработка дизайна" width="370" height="294" />
             </li>
           </ul>
         </div>
@@ -134,24 +134,32 @@
           <!--Команда 4 фотки с подписью-->
           <ul class="team-list list">
             <li class="team-item">
-                <img class="team-picture" src="images/team-card1.jpg" alt="фото сотрудника" width="270"  />
-              <h3 class="team-title">Игорь Демьяненко</h3>
-              <p class="team-text">Product Designer</p>
+                <img class="img" class="team-picture" src="images/team-card1.jpg" alt="фото сотрудника" width="270"  />
+              <div class="team-card">
+                <h3 class="team-title">Игорь Демьяненко</h3>
+                <p class="team-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
-                <img class="team-picture" src="images/team-card2.jpg" alt="фото сотрудника" width="270" />
-              <h3 class="team-title">Ольга Репина</h3>
-              <p class="team-text">Frontend Developer</p>
+                <img class="img" class="team-picture" src="images/team-card2.jpg" alt="фото сотрудника" width="270" />
+              <div class="team-card">
+                <h3 class="team-title">Ольга Репина</h3>
+                <p class="team-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
-                <img class="team-picture" src="images/team-card3.jpg" alt="фото сотрудника" width="270" />
-              <h3 class="team-title">Николай Тарасов</h3>
-              <p class="team-text">Marketing</p>
+                <img class="img" class="team-picture" src="images/team-card3.jpg" alt="фото сотрудника" width="270" />
+              <div class="team-card">
+                <h3 class="team-title">Николай Тарасов</h3>
+                <p class="team-text">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
-                <img class="team-picture" src="images/team-card4.jpg" alt="фото сотрудника" width="270" />
-              <h3 class="team-title">Михаил Ермаков</h3>
-              <p class="team-text">UI Designer</p>
+                <img class="img" class="team-picture" src="images/team-card4.jpg" alt="фото сотрудника" width="270" />
+              <div class="team-card">
+                <h3 class="team-title">Михаил Ермаков</h3>
+                <p class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -162,7 +170,7 @@
 
     <!-----------------------------Футер ---------------------->
     <footer class="footer">
-      <div class="container footer">
+      <div class="container">
         <!-- Text WebStudio-->
         <a href="./index.html" class="footer-logo"> <span class="footer-web">Web</span>  Studio</a>
         <!--Address-->
