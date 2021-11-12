@@ -388,8 +388,9 @@ body {
 }
 
 .filter-item {
-  border-radius: 4px;
+
 }
+
 
 .filter-item:nth-child(n+2) {
   margin-left: 30px;
@@ -412,6 +413,7 @@ body {
 
   border: 0;
   padding: 6px 22px;
+  border-radius: 4px;
 }
 
 
