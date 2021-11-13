@@ -159,6 +159,10 @@ body {
 
 }
 
+.header-contacts-link { 
+  color: var(--second-text);
+}
+
 .header-link.now { 
   color: var(--accent);
 }
